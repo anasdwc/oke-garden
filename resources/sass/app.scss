@@ -1,0 +1,62 @@
+@forward "global";
+@forward "components";
+
+.main {
+    max-width: 1080px;
+    margin: 4em auto;
+}
+
+.desc {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid--two {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--gap-1 {
+    gap: 1em;
+}
+
+.form {
+    border: 1.5px solid gray;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.mt--2 {
+    margin-top: 2em;
+}
+
+.label {
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.button {
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 0.5em 1em;
+    font-weight: 500;
+    font-size: 1em;
+    font-family: "Rubik";
+    cursor: pointer;
+}
+
+.big-form {
+    padding: 4em 3em;
+}
+
+.subtitle {
+    font-weight: 400;
+    color: gray;
+}

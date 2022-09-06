@@ -1,0 +1,456 @@
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap);
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+p {
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+:root {
+  --background-color: #f8f8f8;
+}
+
+.react-calendar {
+  width: 50%;
+  margin-right: 1em;
+  padding: 2em 1.5em;
+  background-color: white;
+}
+
+.react-calendar__navigation {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.react-calendar button {
+  border: none;
+  background-color: transparent;
+}
+
+.react-calendar__navigation__prev-button {
+  order: 2;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.react-calendar__navigation__label {
+  order: 1;
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.react-calendar__navigation__next-button {
+  order: 3;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  margin-bottom: 1em;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+.react-calendar__month-view__days > button {
+  padding: 20px 20px;
+  font-size: 0.9em;
+  font-weight: 400;
+  font-family: "Rubik";
+  color: gray;
+}
+
+.react-calendar__tile--active {
+  background-color: #43b5ff !important;
+  color: white !important;
+  font-weight: 700 !important;
+  border-radius: 100% !important;
+}
+
+.garden-form {
+  border-top: 1.5px solid gray;
+}
+
+.garden-form > h2 {
+  margin-bottom: 2em;
+}
+
+.lahan,
+.tema-taman,
+.estimasi-ukuran {
+  margin-bottom: 3em;
+}
+
+.lahan__button:first-child {
+  margin-left: 0;
+}
+
+.lahan__button {
+  margin: 0 0.5em;
+}
+
+.lahan__button > button {
+  border: 2px solid green;
+  padding: 1em;
+  border-radius: 10px;
+  color: green;
+  font-weight: 500;
+}
+
+.button--active > button {
+  background-color: green;
+  border-radius: 10px;
+  color: white !important;
+}
+
+.titleDesc {
+  margin-bottom: 0.2em;
+}
+
+.tema-taman__option {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
+.catatan {
+  color: hsl(0deg, 0%, 30%);
+  display: inline-block;
+  background-color: hsl(51deg, 80%, 90%);
+  padding: 1.2em 1em;
+  margin-bottom: 2em;
+  border-radius: 15px;
+}
+
+.catatan > p {
+  margin-bottom: 0;
+  display: flex;
+}
+
+.catatan > p > strong {
+  margin-right: 0.5em;
+}
+
+.card {
+  border-radius: 15px;
+  border: 1.5px solid gray;
+  position: relative;
+}
+
+.card__img > img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 10px;
+}
+
+.card__desc {
+  padding: 1em 1.5em 4em;
+}
+
+.card__desc > h4 {
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+}
+
+.card__desc__subtitle {
+  font-weight: 400;
+  color: gray;
+}
+
+.card__desc__link {
+  position: absolute;
+  bottom: 1em;
+  right: 1.5em;
+  margin-bottom: 0;
+}
+
+.card__desc__link button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.card__desc__link p {
+  text-decoration: underline;
+  font-family: "Josefin Sans";
+  margin-bottom: 0;
+  color: green;
+  font-size: 1.3em;
+}
+
+.estimasi-ukuran__option {
+  margin-top: 1em;
+}
+
+.estimasi-ukuran__button {
+  margin: 0 0.5em;
+  font-size: 1em;
+}
+
+.estimasi-ukuran__button > button {
+  border: 2px solid green;
+  color: green;
+  border-radius: 10px;
+}
+
+.estimasi-ukuran__button:first-child {
+  margin-left: 0;
+}
+
+.estimasi-ukuran__button:last-child {
+  margin-right: 0;
+}
+
+.button-submit {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8em;
+}
+
+.button--success,
+.button--cancel {
+  border: none;
+}
+
+.button--success {
+  margin-left: 1em;
+  background-color: green !important;
+  color: white;
+}
+
+.button--cancel {
+  color: green;
+  background-color: hsl(0deg, 0%, 95%) !important;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0 1px 10px hsl(0deg, 0%, 90%);
+  padding: 1.2em 2em 0.8em;
+  align-items: center;
+}
+
+.header__brand > img {
+  width: 230px;
+}
+
+.nav > ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav li {
+  margin: 0 1em;
+  color: hsl(0deg, 0%, 40%);
+  font-size: 1.1em;
+}
+
+.nav a {
+  color: hsl(0deg, 0%, 40%);
+}
+
+.user > img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.personal-data__form__bio {
+  display: flex;
+  margin: 2em 0;
+}
+
+.personal-data__input {
+  width: 40%;
+}
+
+.personal-data__input > input {
+  width: 90%;
+  font-size: 1em;
+  padding: 0.8em 1em;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(0deg, 0%, 95%);
+  color: hsl(0deg, 0%, 50%);
+  margin: 10px 0;
+}
+
+.personal-data__form__address {
+  display: flex;
+}
+
+.personal-data__form__address__box {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 1.5em;
+  margin-left: 1em;
+  border: 2px solid green;
+  border-radius: 10px;
+}
+
+.personal-data__form__address__addNew {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0;
+}
+
+.personal-data__form__address__addNew > a {
+  color: green;
+  text-decoration: underline;
+}
+
+.personal-data__form__address__input {
+  font-weight: 300;
+}
+
+.time-picker {
+  width: 50%;
+  margin-left: 1em;
+  padding: 2em 1.5em;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.time-picker__mainDesc {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.time-picker__day,
+.time-picker__desc > h3 {
+  margin-bottom: 0.2em;
+}
+
+.time-picker__date,
+.time-picker__desc > p {
+  font-weight: 400;
+  color: gray;
+}
+
+.time-picker__time-button > button {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid gray;
+  padding: 0.5em 1em;
+  color: #43b5ff;
+}
+
+.time-picker--active {
+  background-color: #99cbeb;
+  border-radius: 5px;
+}
+
+.main {
+  max-width: 1080px;
+  margin: 4em auto;
+}
+
+.desc {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--two {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--gap-1 {
+  gap: 1em;
+}
+
+.form {
+  border: 1.5px solid gray;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.mt--2 {
+  margin-top: 2em;
+}
+
+.label {
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.button {
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 0.5em 1em;
+  font-weight: 500;
+  font-size: 1em;
+  font-family: "Rubik";
+  cursor: pointer;
+}
+
+.big-form {
+  padding: 4em 3em;
+}
+
+.subtitle {
+  font-weight: 400;
+  color: gray;
+}

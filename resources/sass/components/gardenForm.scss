@@ -1,0 +1,159 @@
+.garden-form {
+  border-top: 1.5px solid gray;
+}
+
+.garden-form > h2 {
+  margin-bottom: 2em;
+}
+
+.lahan,
+.tema-taman,
+.estimasi-ukuran {
+  margin-bottom: 3em;
+}
+
+.lahan__button:first-child {
+  margin-left: 0;
+}
+
+.lahan__button {
+  margin: 0 0.5em;
+}
+
+.lahan__button > button {
+  border: 2px solid green;
+  padding: 1em;
+  border-radius: 10px;
+  color: green;
+  font-weight: 500;
+}
+
+.button--active > button {
+  background-color: green;
+  border-radius: 10px;
+  color: white !important;
+}
+
+.titleDesc {
+  margin-bottom: 0.2em;
+}
+
+.tema-taman__option {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
+.catatan {
+  color: hsl(0, 0, 30%);
+  display: inline-block;
+  background-color: hsl(51, 80%, 90%);
+  padding: 1.2em 1em;
+  margin-bottom: 2em;
+  border-radius: 15px;
+}
+
+.catatan > p {
+  margin-bottom: 0;
+  display: flex;
+}
+
+.catatan > p > strong {
+  margin-right: 0.5em;
+}
+
+.card {
+  border-radius: 15px;
+  border: 1.5px solid gray;
+  position: relative;
+}
+
+.card__img > img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.card__desc {
+  padding: 1em 1.5em 4em;
+}
+
+.card__desc > h4 {
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+}
+
+.card__desc__subtitle {
+  font-weight: 400;
+  color: gray;
+}
+
+.card__desc__link {
+  position: absolute;
+  bottom: 1em;
+  right: 1.5em;
+  margin-bottom: 0;
+}
+
+.card__desc__link button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.card__desc__link p {
+  text-decoration: underline;
+  font-family: "Josefin Sans";
+  margin-bottom: 0;
+  color: green;
+  font-size: 1.3em;
+}
+
+// Estimasi Ukuran
+.estimasi-ukuran__option {
+  margin-top: 1em;
+}
+
+.estimasi-ukuran__button {
+  margin: 0 0.5em;
+  font-size: 1em;
+}
+
+.estimasi-ukuran__button > button {
+  border: 2px solid green;
+  color: green;
+  border-radius: 10px;
+}
+
+.estimasi-ukuran__button:first-child {
+  margin-left: 0;
+}
+
+.estimasi-ukuran__button:last-child {
+  margin-right: 0;
+}
+
+// Button Submit
+.button-submit {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8em;
+}
+
+.button--success,
+.button--cancel {
+  border: none;
+}
+
+.button--success {
+  margin-left: 1em;
+  background-color: green !important;
+  color: white;
+}
+
+.button--cancel {
+  color: green;
+  background-color: hsl(0, 0, 95%) !important;
+}

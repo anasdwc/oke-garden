@@ -1,0 +1,47 @@
+.personal-data__form__bio {
+  display: flex;
+  margin: 2em 0;
+}
+
+.personal-data__input {
+  width: 40%;
+}
+
+.personal-data__input > input {
+  width: 90%;
+  font-size: 1em;
+  padding: 0.8em 1em;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(0, 0, 95%);
+  color: hsl(0, 0, 50%);
+  margin: 10px 0;
+}
+
+.personal-data__form__address {
+  display: flex;
+}
+
+.personal-data__form__address__box {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 1.5em;
+  margin-left: 1em;
+  border: 2px solid green;
+  border-radius: 10px;
+}
+
+.personal-data__form__address__addNew {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0;
+}
+
+.personal-data__form__address__addNew > a {
+  color: green;
+  text-decoration: underline;
+}
+
+.personal-data__form__address__input {
+  font-weight: 300;
+}
